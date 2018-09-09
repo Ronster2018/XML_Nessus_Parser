@@ -1,7 +1,7 @@
 # XML_Nessus_Parser ![CI status](https://img.shields.io/badge/python-2.7-green.svg)
 
 The XML Nessus Parser is a tool that makes requests to the Nessus API, 
-downloads, sorts the information to csv files, and emails those files to who needs to see it.
+downloads, sorts the information to csv files, and optionally emails those files to who needs to see it.
 
 ## Installation
 
