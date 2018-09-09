@@ -1,23 +1,3 @@
-# XML_Nessus_Parser ![CI status](https://img.shields.io/badge/python-2.7-green.svg)
-
-The XML Nessus Parser is a tool that makes requests to the Nessus API, 
-downloads, sorts the information to csv files, and emails those files to who needs to see it.
-
-## Installation
-
-### Requirements
-* Windows
-* Python 2.7
-* requests
-* urllib3
-
-`$ pip install -r requirements.txt`
-
-## Set Up
-* Run setup.py first. This should create the required file structure for the project.
-
-* Edit the config.py and add your API credentials along with other important information.
-```python
 # Your Nessus Scanner API Keys
 ACCESS_KEY = "Your_Nessus_Access_Key"
 SECRET_KEY = "Your_Nessus_SecretKey"
@@ -38,7 +18,7 @@ SEVERITY = '1'  # Meaning we will see 1 and above
 # EX: 10.10.10.10 : Mike
 DIRECTORY = False
 
-# Enabling the email functionality. Change to True if you want emails to be sent
+# Enabling the email functionality. Change to True if you want to emails to be sent
 # The set up of the Directory is represented with key, value pairs.
 # This is represented with the Name on the left and the email on the right with a space in between
 
@@ -53,13 +33,3 @@ PASSWORD = ""
 # make sure to include a delimiter that is unique and does not show in the .txt file
 # of your choosing
 Delimiter = ":"
-```
-
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
